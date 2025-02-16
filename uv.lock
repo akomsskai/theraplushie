@@ -7,7 +7,7 @@ members = [
     "monorepo",
     "speaker",
     "utils",
-    "voice",
+    "Brain",
 ]
 
 [[package]]
@@ -1242,9 +1242,9 @@ wheels = [
 ]
 
 [[package]]
-name = "voice"
+name = "Brain"
 version = "0.0.0"
-source = { editable = "src/voice" }
+source = { editable = "src/Brain" }
 dependencies = [
     { name = "typer" },
     { name = "utils" },
