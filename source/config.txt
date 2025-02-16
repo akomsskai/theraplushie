@@ -2,10 +2,13 @@
 # http://rptl.io/configtxt
 # Some settings may impact device functionality. See link above for details
 
-# Uncomment some or all of these to enable the optional hardware interfaces
-#dtparam=i2c_arm=on
-#dtparam=i2s=on
-#dtparam=spi=on
+# Enable I2C and I2S interfaces for Google Voice Bonnet
+dtparam=i2c_arm=on
+dtparam=i2s=on
+dtparam=spi=on
+
+# Add Google Voice Bonnet overlay
+dtoverlay=googlevoicehat-soundcard
 
 # Enable audio (loads snd_bcm2835)
 dtparam=audio=on
