@@ -17,6 +17,8 @@ dependencies = [
 [tool.uv.sources]
 utils = { workspace = true }
 core = { workspace = true }
+speaker = { workspace = true }
+voice = { workspace = true }
 
 [tool.uv.workspace]
 members = [
@@ -32,6 +34,8 @@ dev-dependencies = [
     #  when developing the project.
     "utils",
     "core",
+    "speaker",
+    "voice"
 ]
 package = false
 

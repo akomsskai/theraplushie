@@ -1,7 +1,7 @@
 [project]
-name = "core"
+name = "speaker"
 version = "0.0.0"
-description = "Core functionality"
+description = "Speaker functionality"
 authors = [
   {name="Jasper Ginn", email="jasperginn@gmail.com"}
 ]
@@ -13,8 +13,7 @@ dependencies = [
 ]
 
 [project.scripts]
-core = "core.cli:app"
-
+speaker = "speaker.cli:app"
 
 [build-system]
 requires = ["hatchling"]
