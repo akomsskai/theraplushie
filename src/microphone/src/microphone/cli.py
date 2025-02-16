@@ -1,15 +1,17 @@
 import typer
-
-from Brain import return_two
+from microphone.recorder import ConversationRecorder
 
 app = typer.Typer()
 
 
 @app.command()
 def run():
-    print(f"Here is {return_two()} for you")
+    # Create recorder with default settings
+    recorder = ConversationRecorder()
+
+    # Start listening
+    recorder.listen()
 
 
 def entrypoint():
     app()
-
