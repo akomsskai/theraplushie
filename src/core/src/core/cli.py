@@ -8,8 +8,7 @@ app = typer.Typer()
 
 @app.command()
 def run():
-    print(f"Here is {return_two()} for you")
-
+    
     plushieProtocol()
 
 

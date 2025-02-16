@@ -9,7 +9,6 @@ def plushieProtocol():
     while userInput != ("bye").lower():
         print("entered while loop")
         getResponse(userInput)
-        # play(plushieResponse)
         # speakToPlushie()
         userInput = input()
 

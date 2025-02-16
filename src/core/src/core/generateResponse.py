@@ -8,15 +8,9 @@ load_dotenv()
 ELEVENLABS_API_KEY = os.environ.get("API_KEY")
 
 def getResponse(input):
-    print("entered get response")
     output = ollama.chat(model = "theraplushie_7", 
                             messages = [{"role" : "user", "content" : input}])
-    print(("ollama ran"))
-    
-    print(ELEVENLABS_API_KEY)
-    client = ElevenLabs(api_key = ELEVENLABS_API_KEY)
-    print(output["message"]["content"])
-    
+    client = ElevenLabs(api_key = ELEVENLABS_API_KEY)    
 
     audioFile = client.text_to_speech.convert(
         text = output["message"]["content"],
@@ -26,5 +20,4 @@ def getResponse(input):
     ) 
 
     play(audioFile)
-
-    #return audioFile"""
+    print(output["message"]["content"])
