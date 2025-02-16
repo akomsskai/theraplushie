@@ -11,7 +11,9 @@ dependencies = [
     "elevenlabs>=1.51.0",
     "numpy>=2.2.3",
     "ollama>=0.4.7",
+    "pyaudio>=0.2.14",
     "sounddevice>=0.5.1",
+    "whisper>=1.1.10",
 ]
 
 [tool.uv.sources]
