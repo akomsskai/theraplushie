@@ -1,6 +1,6 @@
 import typer
 
-from Brain import return_two
+from voice import return_two
 
 app = typer.Typer()
 

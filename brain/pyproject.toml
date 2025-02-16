@@ -1,7 +1,7 @@
 [project]
-name = "Brain"
+name = "voice"
 version = "0.0.0"
-description = "Brain functionality"
+description = "voice functionality"
 authors = [
   {name="Jasper Ginn", email="jasperginn@gmail.com"}
 ]
@@ -13,7 +13,7 @@ dependencies = [
 ]
 
 [project.scripts]
-Brain = "Brain.cli:app"
+voice = "voice.cli:app"
 
 [build-system]
 requires = ["hatchling"]

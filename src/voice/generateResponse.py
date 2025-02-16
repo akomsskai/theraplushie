@@ -4,7 +4,6 @@ from elevenlabs.client import Elevenlabs
 
 def getResponse():
     # output = ollama.generate(model = "test1", prompt = input) 
-    # where prompt is the user input sourced from @ miguel and model is the engineered model
 
     load_dotenv()
 
@@ -20,4 +19,4 @@ def getResponse():
 
     return audioFile
 
-    # do something with audio file
+    # do something with audi o file
